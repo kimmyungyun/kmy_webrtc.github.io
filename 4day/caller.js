@@ -76,6 +76,22 @@ function cbGotRemoteStream(evt) {
         trace('## Received remote stream success');
     }
 }
+function start() {
+    if (window.stream) {
+      window.stream.getTracks().forEach(function(track) {
+        track.stop();
+      });
+    }
+    var audioSource = audioInputSelect.value;
+    var videoSource = videoSelect.value;
+    var constraints = {
+      audio: {deviceId: audioSource ? {exact: audioSource} : undefined},
+      video: {deviceId: videoSource ? {exact: videoSource} : undefined}
+    };
+
+    navigator.mediaDevices.getUserMedia(constraints).
+        then(cbGotStream).then(gotDevices).catch(handleError);
+}
 
 function onStart() {
     var cfg = {
