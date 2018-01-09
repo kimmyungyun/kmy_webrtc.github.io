@@ -15,7 +15,9 @@ var vid2 = document.querySelector('#vid2');
 var btn_start = document.querySelector('#btn_start');
 var btn_finalOffer = document.querySelector('#btn_finalOffer');
 var btn_receiveAnswer = document.querySelector('#btn_receiveAnswer');
+var btn_desktop = document.querySelector('#btn_desktop');
 
+btn_desktop.addEventListener('click', onToggleDesktop);
 btn_start.addEventListener('click', onStart);
 btn_finalOffer.addEventListener('click', onOffer);
 btn_receiveAnswer.addEventListener('click', onReceiveAnswer);
