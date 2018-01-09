@@ -140,9 +140,10 @@ function startDesktop() {
         });
     });
 }
+
 var isDesktop = false;
 function onToggleDesktop(){
-
+    console.log("test");
     if (isDesktop == false) {
         startDesktop();
     } else {
