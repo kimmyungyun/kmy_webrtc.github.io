@@ -130,7 +130,7 @@ function onStart() {
     sendChannel.onclose = cbChannelStateChange;
     sendChannel.onmessage = function(event){
         console.info('sendChannel.onmessage : ' + event.data);
-        document.querySelector("div#receive").innerHTML += '<br/>' + event.data;
+        document.querySelector("div#receive").innerHTML += '<br/>' + 'another : ' + event.data;
     };
 
     var url = 'wss://node5day.herokuapp.com/room/' + roodId.value;
@@ -154,7 +154,7 @@ function cbChannelStateChange() {
 
 function sendDataViaDataChannel(data) {
     sendChannel.send(data);
-    document.querySelector("div#receive").innerHTML += '<br/>' + data;
+    document.querySelector("div#receive").innerHTML += '<br/>' +'Me : '+ data;
     trace('Sent Data: ' + data);
 }
 

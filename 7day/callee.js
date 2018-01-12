@@ -234,7 +234,7 @@ function cbDtatChannel(event) {
 
             console.info('receiveChannel.onmessage : ' + event.data);
 
-            document.querySelector("div#receive").innerHTML += '<br/>' + event.data;
+            document.querySelector("div#receive").innerHTML += '<br/>' + 'anotehr : '+ event.data;
 
         };
 
@@ -266,7 +266,7 @@ function sendDataViaDataChannel(data) {
 
     receiveChannel.send(data);
 
-    document.querySelector("div#receive").innerHTML += '<br/>' + data;
+    document.querySelector("div#receive").innerHTML += '<br/>' +'Me : '+ data;
 
     trace('Sent Data: ' + data);
 
