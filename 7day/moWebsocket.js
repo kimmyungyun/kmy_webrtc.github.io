@@ -4,7 +4,7 @@ var g_mc_ws_component = {
 
     // url: 'wss://zoops-webrtc-01.herokuapp.com/echo',
 
-    url: 'https://node5day.herokuapp.com/',
+    url: 'wss://node5day.herokuapp.com',
 
     init: function () {
 
