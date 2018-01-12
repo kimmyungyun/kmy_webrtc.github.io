@@ -133,8 +133,8 @@ function onStart() {
         document.querySelector("div#receive").innerHTML += '<br/>' + event.data;
     };
 
-
-    var url = 'wss://node5day.herokuapp.com';
+    var url = 'wss://node5day.herokuapp.com/room/' + roodId.value;
+    //var url = 'ws://127.0.0.1:3001/room/'+ roodId.value;
     //var url = 'wss://node5day.herokuapp.com' + roodId.value;
 
     // var url = 'wss://zoops-webrtc-01.herokuapp.com/room/' + roodId.value;

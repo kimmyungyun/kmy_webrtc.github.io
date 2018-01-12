@@ -7,7 +7,7 @@ var signalClients = [];
 var rooms = {};
 
 app.set( 'port', process.env.PORT || 3001 );
-
+app.use('/chat',express.static('../7day'))
 app.get('/', function(req, res, next){
   res.send('Hello World');  
 });
