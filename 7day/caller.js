@@ -134,8 +134,8 @@ function onStart() {
     };
 
 
-
-    var url = 'wss://node5day.herokuapp.com' + roodId.value;
+    var url = 'wss://node5day.herokuapp.com';
+    //var url = 'wss://node5day.herokuapp.com' + roodId.value;
 
     // var url = 'wss://zoops-webrtc-01.herokuapp.com/room/' + roodId.value;
 
