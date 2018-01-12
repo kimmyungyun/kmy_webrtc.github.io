@@ -204,7 +204,7 @@ function onStart() {
 
 
 
-    var url = 'ws://127.0.0.1:3001/room/' + roodId.value;
+    var url = 'wss://node5day.herokuapp.com' + roodId.value;
 
     // var url = 'wss://zoops-webrtc-01.herokuapp.com/room/' + roodId.value;
 
